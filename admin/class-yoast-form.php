@@ -324,7 +324,7 @@ class Yoast_Form {
 		$container_class = 'switch-container';
 		$help_toggle     = '';
 
-		if ( $help instanceof WPSEO_Admin_Help_Panel ) {
+		if ( $help !== null ) {
 			$container_class .= ' switch-container__has-help';
 			$help_toggle      = $help->get_button_html() . $help->get_panel_html();
 		}
@@ -687,7 +687,7 @@ class Yoast_Form {
 		$container_class = 'switch-container';
 		$help_toggle     = '';
 
-		if ( $help instanceof WPSEO_Admin_Help_Panel ) {
+		if ( $help !== null ) {
 			$container_class .= ' switch-container__has-help';
 			$help_toggle      = $help->get_button_html() . $help->get_panel_html();
 		}
