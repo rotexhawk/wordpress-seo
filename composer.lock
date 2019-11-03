@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "772e8a868261705aa5b446d2736982d5",
+    "content-hash": "bcf67cc12fd880568d765c0823ba42b2",
     "packages": [
         {
             "name": "composer/installers",
@@ -939,20 +939,23 @@
     "packages-dev": [
         {
             "name": "antecedent/patchwork",
-            "version": "2.1.8",
+            "version": "2.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/antecedent/patchwork.git",
-                "reference": "3bb81ace3914c220aa273d1c0603d5e1b454c0d7"
+                "reference": "ff7aae02f1c5492716fe13d59de4cfc389b8c4b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/antecedent/patchwork/zipball/3bb81ace3914c220aa273d1c0603d5e1b454c0d7",
-                "reference": "3bb81ace3914c220aa273d1c0603d5e1b454c0d7",
+                "url": "https://api.github.com/repos/antecedent/patchwork/zipball/ff7aae02f1c5492716fe13d59de4cfc389b8c4b0",
+                "reference": "ff7aae02f1c5492716fe13d59de4cfc389b8c4b0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4"
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
@@ -976,7 +979,7 @@
                 "runkit",
                 "testing"
             ],
-            "time": "2018-02-19T18:52:50+00:00"
+            "time": "2019-10-26T07:10:56+00:00"
         },
         {
             "name": "atanamo/php-codeshift",
@@ -1027,16 +1030,16 @@
         },
         {
             "name": "brain/monkey",
-            "version": "2.2.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Brain-WP/BrainMonkey.git",
-                "reference": "326a537bf518edd61bc57ab275e8b075ebb8a1a9"
+                "reference": "547dff709347b46cd2078787e0133d260b0dabe4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Brain-WP/BrainMonkey/zipball/326a537bf518edd61bc57ab275e8b075ebb8a1a9",
-                "reference": "326a537bf518edd61bc57ab275e8b075ebb8a1a9",
+                "url": "https://api.github.com/repos/Brain-WP/BrainMonkey/zipball/547dff709347b46cd2078787e0133d260b0dabe4",
+                "reference": "547dff709347b46cd2078787e0133d260b0dabe4",
                 "shasum": ""
             },
             "require": {
@@ -1045,7 +1048,9 @@
                 "php": ">=5.6.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~5.7.9"
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.4",
+                "phpcompatibility/php-compatibility": "^9.3.0",
+                "phpunit/phpunit": "^5.7.9 || ^6.0 || ^7.0"
             },
             "type": "library",
             "extra": {
@@ -1087,7 +1092,7 @@
                 "test",
                 "testing"
             ],
-            "time": "2019-03-15T13:42:24+00:00"
+            "time": "2019-10-20T19:54:31+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -1312,16 +1317,16 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.2.2",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "0eb0b48c3f07b3b89f5169ce005b7d05b18cf1d2"
+                "reference": "b3453f75fd23d9fd41685f2148f4abeacabc6405"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/0eb0b48c3f07b3b89f5169ce005b7d05b18cf1d2",
-                "reference": "0eb0b48c3f07b3b89f5169ce005b7d05b18cf1d2",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/b3453f75fd23d9fd41685f2148f4abeacabc6405",
+                "reference": "b3453f75fd23d9fd41685f2148f4abeacabc6405",
                 "shasum": ""
             },
             "require": {
@@ -1335,7 +1340,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -1373,7 +1378,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2019-02-13T09:37:52+00:00"
+            "time": "2019-09-30T08:30:27+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -3687,7 +3692,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "brain/monkey": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
